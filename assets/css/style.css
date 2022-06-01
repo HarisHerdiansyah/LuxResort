@@ -1,0 +1,469 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    border-bottom: 3px solid #C87941;
+    color: #DBCBBD;
+    background-color: #1C0A00;
+    position: sticky;
+    top: 0;
+}
+
+header>.brand {
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+header>.nav>ul li.nav-item {
+    display: inline-block;
+    list-style: none;
+    margin-right: 2rem;
+}
+
+header>.nav>ul li#nav_expand_toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+#nav_expand_menu {
+    padding: 50px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1C0A00;
+    opacity: .9;
+}
+
+#nav_expand_menu > .fa-times {
+    color: #DBCBBD;
+    font-size: 2rem;
+    float: right;
+    cursor: pointer;
+}
+
+#nav_expand_menu>ul {
+    margin: 7rem 0;
+}
+
+#nav_expand_menu>ul li {
+    list-style: none;
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+}
+
+.hide {
+    display: none;
+}
+
+.banner {
+    width: 100%;
+    height: 700px;
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner-content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-content>.content {
+    color: #DBCBBD;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.content>.btn {
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    color: #DBCBBD;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid #DBCBBD;
+    text-decoration: none;
+    background-color: transparent;
+    margin-top: 50px;
+    transition: .3s;
+    font-family: 'Montserrat';
+}
+
+.content>.btn a {
+    text-decoration: none;
+    color: #DBCBBD;
+}
+
+.content>.btn:hover {
+    background: #C87941;
+    border: 2px solid #1C0A00;
+    color: #1C0A00;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.content>.btn a:hover {
+    color: #1C0A00;
+}
+
+main {
+    color: #1C0A00;
+}
+
+.about,
+.suite,
+.services,
+.general-services,
+.book-banner,
+.gallery,
+.testimonials,
+.booking {
+    padding: 100px;
+    text-align: center;
+}
+
+.about>h1,
+.services>h1,
+.general-services>h1,
+.book-banner>h1,
+.gallery>h1,
+.testimonials>h1,
+.contact>h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.about>article {
+    padding: 0 150px;
+}
+
+.about>article>p {
+    margin: 50px 0;
+}
+
+.about>.btn,
+.suite>.btn,
+.gallery>.btn,
+.testimonials>.btn {
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    color: #290001;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    border: solid #290001 2px;
+    text-decoration: none;
+    background-color: transparent;
+    transition: .3s;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.about>.btn:hover,
+.suite>.btn:hover,
+.gallery>.btn:hover,
+.testimonials>.btn:hover {
+    background: #290001;
+    text-decoration: none;
+    cursor: pointer;
+    color: #DBCBBD;
+}
+
+.suite>h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.suite>h3 {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.suite-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.suite-img,
+.suite-desc {
+    width: 50%;
+    /* border: 1px solid black; */
+}
+
+.suite-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.suite-img>img {
+    width: 360px;
+}
+
+.suite-desc {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.suite-desc>table {
+    border-spacing: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.suite-desc>article>p {
+    font-size: 1rem;
+}
+
+.suite>.btn {
+    margin-top: 50px;
+}
+
+.suite-desc>.btn,
+.book-banner>.btn,
+.booking-form .btn {
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    color: #DBCBBD;
+    font-size: 20px;
+    background: #290001;
+    padding: 10px 20px 10px 20px;
+    border: solid #290001 2px;
+    text-decoration: none;
+    margin-top: 50px;
+    transition: .3s;
+    font-family: 'Montserrat';
+}
+
+.book-banner>.btn a,
+.suite-desc>.btn a {
+    color: #DBCBBD;
+    text-decoration: none;
+}
+
+.book-banner>.btn a:hover,
+.suite-desc>.btn a:hover {
+    color: #290001;
+}
+
+.suite-desc>.btn:hover {
+    background: #C87941;
+    color: #290001;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.book-banner>.btn:hover,
+.booking-form .btn:hover {
+    background: #DBCBBD;
+    border: 2px solid #DBCBBD;
+    color: #290001;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.card-wrapper>.card {
+    width: 360px;
+    text-align: left;
+}
+
+.card-wrapper>.card>.card-img>img {
+    width: 100%;
+}
+
+.card-wrapper>.card>.card-body>h2 {
+    margin: 20px 0;
+}
+
+.card-wrapper>.card>.card-body>p {
+    line-height: 1.25rem;
+}
+
+.general-services>.wrapper {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.general-services>.wrapper ul li {
+    list-style: none;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.book-banner {
+    background-color: #C87941;
+}
+
+.gallery>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.gallery>div>img {
+    width: 360px;
+}
+
+.testimonials-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.testimonials-wrapper>#prev,
+.testimonials-wrapper>#next {
+    border-radius: 50%;
+    color: #FFF;
+    font-size: 20px;
+    background: #290001;
+    border: solid #290001 2px;
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+.testimonials-wrapper>#prev:hover,
+.testimonials-wrapper>#next:hover {
+    cursor: pointer;
+}
+
+.testimonials-card {
+    width: 380px;
+    display: none;
+}
+
+/* for manipulation and events in DOM */
+.show {
+    display: block;
+    margin: auto;
+}
+
+.testimonials-card>img {
+    border-radius: 50%;
+}
+
+.testimonials-card>img,
+.testimonials-card>h4,
+.testimonials-card>p {
+    margin: 10px 0;
+}
+
+.booking {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.booking>.contact,
+.booking>.booking-form {
+    width: 45%;
+}
+
+.booking>.contact {
+    text-align: left;
+}
+
+.contact>table {
+    font-size: 1.2rem;
+    margin: 30px 0;
+}
+
+.booking-form {
+    background-color: #C87941;
+    padding: 30px 80px;
+}
+
+.booking-form>form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form>form>input {
+    padding: 12px 20px;
+    border: none;
+}
+
+.booking-form>form>input,
+.booking-form>form>textarea {
+    outline-color: #DBCBBD;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+footer {
+    width: 100%;
+    padding: 60px;
+    background-color: #1C0A00;
+    color: #DBCBBD;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer h1 {
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+footer>aside {
+    max-width: 330px;
+}
+
+footer>aside>h4 {
+    margin-bottom: 1.5rem;
+}
+
+footer>aside>img {
+    float: left;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+footer>aside>p {
+    line-height: 1.5em;
+    text-align: justify;
+}

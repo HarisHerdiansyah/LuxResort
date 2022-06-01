@@ -1,0 +1,248 @@
+@media screen and (max-width: 1024px) {
+
+    .about,
+    .suite,
+    .services,
+    .general-services,
+    .book-banner,
+    .gallery,
+    .testimonials,
+    .booking {
+        padding: 100px 30px;
+        text-align: center;
+    }
+
+    .about>h1,
+    .suite>h1,
+    .services>h1,
+    .general-services>h1,
+    .book-banner>h1,
+    .gallery>h1,
+    .testimonials>h1,
+    .contact>h1 {
+        font-size: 1.75rem;
+        margin-bottom: 20px;
+    }
+
+    .suite>h3 {
+        font-size: 1.25rem;
+    }
+
+    .suite-desc {
+        padding: 0;
+    }
+
+    .suite-desc>table {
+        font-size: 1.25rem;
+    }
+
+    .card-wrapper {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .card-wrapper>.card,
+    .suite-img>img,
+    .gallery>div>img {
+        width: 280px;
+    }
+
+    .booking-form {
+        padding: 30px 50px;
+    }
+
+    .booking>.contact,
+    .booking>.booking-form {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 30px 10px 20px;
+    }
+
+    header > .nav > ul li.nav-item {
+        display: none;
+    }
+
+    header > .nav > ul li#nav_expand_toggle {
+        display: block;
+    }
+
+    .banner-content>.content {
+        font-size: 1.5rem;
+    }
+
+    .card-wrapper {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .card-wrapper>.card {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .card-wrapper>.card>.card-img>img {
+        width: 280px;
+    }
+
+    .card-wrapper>.card>.card-body>h2 {
+        margin: 0;
+    }
+
+    .general-services>.wrapper {
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .general-services>.wrapper ul li {
+        font-size: 1rem;
+    }
+
+    .booking {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .booking>.contact,
+    .booking>.booking-form {
+        width: 100%;
+    }
+
+    .booking-form {
+        background-color: #C87941;
+        padding: 30px;
+    }
+
+    .booking-form>form>input {
+        padding: 12px 16px;
+    }
+
+    .booking-form>form>input,
+    .booking-form>form>textarea {
+        margin: 15px 0;
+    }
+
+    footer {
+        padding: 30px 20px;
+        flex-wrap: wrap;
+        gap: 100px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .banner {
+        background-position: -180px 0;
+    }
+
+    .banner-content {
+        padding: 0 20px;
+    }
+
+    .banner-content>.content {
+        font-size: 1rem;
+    }
+
+    .about,
+    .suite,
+    .services,
+    .general-services,
+    .book-banner,
+    .gallery,
+    .booking {
+        padding: 100px 20px;
+    }
+
+    .testimonials {
+        padding: 100px 10px;
+    }
+
+    .about>article {
+        padding: 0 20px;
+    }
+
+    .about>h1,
+    .suite>h1,
+    .services>h1,
+    .general-services>h1,
+    .book-banner>h1,
+    .gallery>h1,
+    .testimonials>h1,
+    .contact>h1 {
+        font-size: 1.25rem;
+    }
+
+    .about>h3,
+    .suite>h3 {
+        font-size: 1rem;
+    }
+
+    .suite-type {
+        flex-direction: column;
+        margin: 50px 0;
+        gap: 20px;
+    }
+
+    .suite-img,
+    .suite-desc {
+        width: 100%;
+    }
+
+    .suite-desc>table {
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+    }
+
+    .card-wrapper>.card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials-wrapper>#prev,
+    .testimonials-wrapper>#next {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contact>h2 {
+        font-size: 1rem;
+    }
+
+    .contact>table {
+        font-size: 1rem;
+        margin: 30px 0;
+    }
+
+    .content>.btn {
+        color: #DBCBBD;
+        font-size: 1rem;
+        padding: 10px 12px 10px 12px;
+    }
+
+    .about>.btn,
+    .suite>.btn,
+    .services>.btn,
+    .gallery>.btn,
+    .testimonials>.btn {
+        font-size: 1rem;
+        padding: 10px 12px 10px 12px;
+        text-align: center;
+    }
+
+
+    
+    .suite-desc>.btn,
+    .book-banner>.btn,
+    .booking-form .btn {
+        font-size: 1rem;
+        padding: 10px 12px 10px 12px;
+        margin-top: 50px;
+    }
+}
